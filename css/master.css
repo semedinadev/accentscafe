@@ -1,0 +1,444 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: "Libre Baskerville", serif;
+    background-color: #fcad3a;
+}
+
+#wrapper1{
+    background-color: #fcad3a;
+    max-width: 100%;
+}
+
+/*-------------------------------------top bar----------------------------------------*/
+
+#wrapper2{
+    max-width: 1024px;
+    margin: auto;
+}
+
+nav ul{
+    background-color: #fcad3a;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    flex: 1 0 auto;
+    text-align: center;
+    
+}
+
+nav ul li a img{
+    color: #ffffff;
+    display: block;
+    font-size: 16pt;
+    padding: 5px;
+}
+
+nav ul li + li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    font-size: 16pt;
+    padding: 10px 5px;
+    margin: 5px;
+}
+
+
+nav ul li a img{
+    border-radius: 10px;
+}
+
+nav ul li a:hover{
+    background: #E98F0B;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #543a13;
+}
+
+.join{
+    background-color: #27A97B;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #543a13;
+}
+
+
+/*-------------------------------------HERO COFFEE----------------------------------------*/
+
+
+#hero-image{
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-image img{
+    margin: auto;
+    width: 100%;
+    min-height: 350px;
+}
+
+#hero-image h1{
+    color: white;
+    font-size: 21pt;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    -webkit-text-stroke: 1px black;
+}
+
+
+/*-------------------------------------BEST COFFEE IN TOWN----------------------------------------*/
+
+/*#best-coffee h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+#best-coffee{
+    color: white;
+    margin: auto;
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-logos{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+*/
+
+#best-coffee h2{
+    padding-top: 40px;
+}
+#best-coffee {
+    width: 100%;
+    color: white;
+}
+
+#best-coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.coffee-logos {
+    max-width: 678px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coffee-logos figure {
+    text-align: center;
+    padding: 35px;
+}
+
+.coffee-logos figure figcaption{
+    font-size: 16pt;
+    padding-top: 5px;
+}
+
+
+/*-------------------------------------FREE CAKE FOR SIGNING UP----------------------------------------*/
+
+#freecake{
+    height:300px;
+    background-image: url(../images/signup-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.text1{
+    padding-top: 70px;
+}
+
+.text2{
+    display: inline-block;
+    margin-top: 60px;
+    padding: 10px 25px;
+    background: #E98F0B;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #543a13;
+}
+
+.text2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text2:hover{
+    background-color: #27A97B;
+}
+
+
+/*-------------------------------------EVERYONE IS WELCOME----------------------------------------*/
+
+#services{
+    background: #ffffff;
+    width: 100%;
+    margin: auto;
+}
+
+#services h2{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 24pt;
+    color: black;
+}
+
+.services-inner{
+    max-width: 980px;
+    margin: auto;    
+}
+
+.icons-services{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons-services figcaption{
+    width: 140px;
+    padding-top: 5px;
+    line-height: auto;
+}
+
+.icons-services figure {
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+/*-------------------------------------TESTIMONIAL----------------------------------------*/
+
+#testimonial{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+#testimonial h2{
+    padding: 40px 0px;
+    font-size: 24pt;
+}
+
+#testimonial p{
+    max-width: 700px;
+    margin: auto;
+    font-style: italic;
+    -webkit-text-stroke: 0.3px #fcad3a;
+    display: block;
+    font-size: 16pt;
+}
+
+#testimonial img{
+    padding: 40px 0px;
+    width:100px;
+}
+
+
+/*-------------------------------------Footer----------------------------------------*/
+
+#bottom{
+    width: 100%;
+    padding: 40px 0;
+    background: #4d4d4d;
+    font-family: "Open Sans", sans-serif;
+    
+}
+/*
+box1{
+    background-image: url(https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.119235978757!2d-6.266264570298944!3d53.34112174645519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9db911775b%3A0x72b58ce2ebfe9e84!2s23+Stephen+Street+Lower%2C+Dublin!5e0!3m2!1sen!2sie!4v1563280271815!5m2!1sen!2sie);
+    background-size: contain;
+}
+*/
+
+.box, .box2, .box3{
+    padding: 20px 15px;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+
+.box iframe{
+    width: 270px;
+    height: auto
+}
+
+.box p{
+    color: white;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.box2 p{
+    color: white;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.box2 img{
+    max-width: 100px;
+    margin: auto;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-frame .box2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-frame .box2 a:hover{
+    color: #B0AFAF;
+}
+
+.box3 p{
+    color: white;
+    font-size: 9pt;
+}
+
+.bottom-frame{
+    max-width: 980px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minitext{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*-------------------------------------Logo responsive----------------------------------------*/
+.logo-mobile {
+    margin-left: 5%;
+}
+
+
+/*-------------------------------------HAMBURGER MENU----------------------------------------*/
+
+label{
+    margin: 0 40px 0 0;
+    font-size:26px;
+    color: white;
+    text-align: right;
+    display: none;
+    padding: 10px;
+    width: 30px;
+    float:right
+}
+
+#toggle{
+    display: none;
+}
+
+nav {
+    clear:right;
+}
+
+
+@media only screen and (max-width: 768px){
+    
+    label {
+        display: block;
+        cursor:pointer;
+    }
+    
+    
+    nav ul {
+        display: block;
+        margin: 0;
+        display: none;
+        
+    }
+    
+    .accents-logo {
+        display: none;
+    }
+    
+    ul li a {
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #EAEAEB;
+        padding: 15px;
+    }
+    
+    #toggle:checked + nav ul {
+        display: block;
+    }
+    
+    .hero1 {
+        display: none;
+    }
+    
+    #hero-image {
+        max-height: 600px;
+    }
+    
+}    
+    /*-------------------------------HERO IMAGE CHANGE----------------------------------------
+    
+    nav ul li a img {
+    display:contents;
+    position: absolute;
+    top: 0;
+    left: 0px
+    }*/
+    
+
+@media only screen and (max-width: 359px){
+    .logo-mobile img {
+        margin-left: -3%;
+        width: 230px;
+        height: auto;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 769px){
+    .logo-mobile, .hero2 {
+        display: none;
+    }
+    
+}
